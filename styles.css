@@ -13,16 +13,6 @@
     --space-xxl: 4.8rem;  /* 48px */
 }
 
-.main {
-    background-color: white;
-    margin: clamp(0.2rem, calc(0.2rem + 2vw), 2.0rem)   /* top & bottom */
-         clamp(0.6rem, 5vw, 12rem);  /* left & right */
-    padding: clamp(0.2rem, calc(0.2rem + 2vw), 3.2rem) 
-        clamp(0.2rem, calc(0.2rem + 2vw), 4.8rem);
-    padding-bottom: 7.2rem;
-    border-radius: .8rem;
-}
-
 h1, h2, h3, p {
     margin: 0;
 }
@@ -48,12 +38,25 @@ h3 {
 }
 
 p {
-    font-size: clamp(1.4rem, calc(1.2rem + 2vw), 1.8rem);
+    font-size: clamp(1.2rem, calc(1rem + 2vw), 1.8rem);
     margin: .2rem 0rem;
 }
 
 body {
    background-color: #424242; 
+   display: flex;
+   justify-content: center;
+}
+
+.main {
+    background-color: white;
+    margin: clamp(0.2rem, calc(0.2rem + 2vw), 2.0rem)   /* top & bottom */
+         clamp(0.6rem, 5vw, 12rem);  /* left & right */
+    padding: clamp(0.2rem, calc(0.2rem + 2vw), 3.2rem) 
+        clamp(0.2rem, calc(0.2rem + 2vw), 4.8rem);
+    padding-bottom: 7.2rem;
+    border-radius: .8rem;
+    max-width: 96rem;
 }
 
 .hero, .section {
